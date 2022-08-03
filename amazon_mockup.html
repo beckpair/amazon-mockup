@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            * {
+                color:black;
+                font-family: Arial, Helvetica, sans-serif
+            }
+            .sign-in {
+                margin: 10px
+            }
+            .username, .password {
+                font-size: 12px;
+                margin: 10px;
+            }
+            input {
+                width: auto;
+                padding: 2px 0;
+                margin: 8px 0;
+            }
+            input[type=submit] {
+                width: 100%;
+                background-color: orange;
+                padding: 14px 20px;
+                margin: 8px 0;
+                border: none;
+                border-radius: 4px
+            }
+            
+            .continue {
+                background-color: gold;
+                margin: 10px;
+                text-align: center;
+                padding: 10px;
+                font-size: 12px;
+                border-style: solid;
+                border-color: darkgoldenrod;
+            }
+            .page {
+                border-style: solid;
+                border-color: lightgrey;
+                width: 400px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-start;
+                vertical-align: middle;
+                
+            }
+                a {
+                    color:dodgerblue;
+                    font-size: 12px;
+                    margin: 20px;
+                    text-decoration: none
+                }
+        </style>
+    </head>
+    <body>
+        <div class="page">
+            <div class="sign-in">
+                <h1>Sign In</h1>
+            </div>
+
+            <div class="form">
+                <form action="/amazon_mockup.html">
+                    <div class="username">
+                        <label for="username">Email(phone or mobile accounts)</label><br>
+                        <input type="text" id="username" name="username" size="50" placeholder="Enter username"><br>
+                    </div>
+
+                    <br />
+
+                    <div class="password">
+                        <label for="pwd">Password</label><br>
+                        <input type="password" id="pwd" name="pwd" size="50" placeholder="Enter password"><br>
+                    </div>
+                    <br />
+                    <div class="continue">
+                        <button type="submit">Continue</button>
+                    </div>
+                </form>
+            </div>
+            <div class="help">
+                <a href="https://www.amazon.com/gp/help/customer/account-issues/ref=ap_login_with_otp_claim_collection?ie=UTF8">Need Help?</a>
+            </div>
+            </div>
+        </div>
+    </body>
+</html>
